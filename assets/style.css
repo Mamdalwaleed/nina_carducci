@@ -243,6 +243,15 @@ input[type="submit"] {
 	background-color: #BEB45A;
 	padding: .5em 1em
 }
+/* Réduction de la hauteur du slider */
+.carousel-item {
+  height: 600px; /* tu peux tester 500px ou 400px aussi */
+}
+
+.carousel-item img {
+  height: 100%;
+  object-fit: cover;
+}
 
 @media all and (max-width: 1180px) {
 	.picture {

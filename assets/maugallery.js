@@ -64,15 +64,6 @@
     $(".gallery").on("click", ".mg-next", () =>
       $.fn.mauGallery.methods.nextImage(options.lightboxId),
     );
-    // 🔽 MODIFICATION
-    $(`#${options.lightboxId}`).on("shown.bs.modal", function () {
-      $(this).attr("aria-hidden", "false").focus();
-    });
-
-    $(`#${options.lightboxId}`).on("hide.bs.modal", function () {
-      $(this).blur();
-      $(this).attr("aria-hidden", "true");
-    });
   };
   $.fn.mauGallery.methods = {
     createRowWrapper(element) {

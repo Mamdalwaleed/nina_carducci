@@ -1,182 +1,239 @@
-<!doctype html>
-<html lang="fr">
-<head>
-  <meta charset="UTF-8" />
-  <title>Nina Carducci</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Site de photographie de Nina Carducci" />
-
-  <!-- CSS -->
-  <link rel="stylesheet" href="./assets/bootstrap/bootstrap.min.css" />
-  <link rel="stylesheet" href="./assets/style.css" />
-
-  <!-- Fonts -->
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Inter&family=Spectral:ital,wght@0,400;1,300;1,400;1,800&display=swap" rel="stylesheet" />
-
-  <!-- Scripts -->
-  <script src="./assets/bootstrap/bootstrap.bundle.min.js" defer></script>
-  <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous" defer></script>
-  <script src="./assets/maugallery.js" defer></script>
-  <script src="./assets/scripts.js" defer></script>
-</head>
-<body>
-
-  <!-- Header -->
-  <header class="top-header">
-    <h1 class="name">Nina Carducci</h1>
-    <nav class="nav" aria-label="Navigation principale">
-      <ul>
-        <li><a href="#about">À propos</a></li>
-        <li><a href="#gallery">Galerie</a></li>
-        <li><a href="#services">Service</a></li>
-        <li><a href="#contact">Contact</a></li>
-        <li>
-          <a class="social-link" href="https://www.instagram.com/ninacarducci.photo/?hl=fr" target="_blank" rel="noopener noreferrer">
-            <img src="assets/images/instagram.webp" alt="Instagram" loading="lazy" />
-          </a>
-        </li>
-      </ul>
-    </nav>
-  </header>
-
-  <!-- Carousel -->
-  <section id="header">
-    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
-      <div class="carousel-inner">
-        <div class="carousel-item active">
-          <img src="./assets/images/slider/ryoji-iwata-wUZjnOv7t0g-unsplash.webp" class="d-block w-100"
-               alt="Photographie de concert avec foule et lumières de scène" width="1920" height="1080" fetchpriority="high" />
-        </div>
-        <div class="carousel-item">
-          <img src="./assets/images/slider/nicholas-green-nPz8akkUmDI-unsplash.webp" class="d-block w-100"
-               alt="Photographie de portrait en lumière naturelle" width="1920" height="1080" />
-        </div>
-        <div class="carousel-item">
-          <img src="./assets/images/slider/edward-cisneros-3_h6-1NPDGw-unsplash.webp" class="d-block w-100"
-               alt="Photographie de mariage avec couple en extérieur" width="1920" height="1080" />
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <main>
-
-    <!-- À propos -->
-    <section id="about">
-      <div class="picture left">
-        <img src="./assets/images/nina.webp" alt="Portrait de la photographe Nina Carducci" width="300" height="300" loading="lazy" />
-      </div>
-      <div id="about-me">
-        <h2>A propos de moi</h2>
-        <h3 class="about-me__introduction">Devenir photographe était pour moi une évidence...</h3>
-        <p>Nous passons notre vie à chercher le bonheur...</p>
-      </div>
-    </section>
-
-    <!-- Portfolio -->
-    <section id="gallery" role="main">
-      <h2 class="title">Portfolio</h2>
-      <div class="container py-3">
-        <div class="gallery" style="display: none">
-          <img data-gallery-tag="Concert" class="gallery-item img-fluid" src="./assets/images/gallery/concerts/aaron-paul-wnX-fXzB6Cw-unsplash.webp"
-               alt="Concert avec public et scène éclairée" width="800" height="533" loading="lazy" />
-          <img data-gallery-tag="Entreprises" class="gallery-item img-fluid" src="./assets/images/gallery/entreprise/ali-morshedlou-WMD64tMfc4k-unsplash.webp"
-               alt="Réunion d'entreprise dans une salle moderne" width="800" height="533" loading="lazy" />
-          <img data-gallery-tag="Mariages" class="gallery-item img-fluid" src="./assets/images/gallery/mariage/hannah-busing-RvF2R_qMpRk-unsplash.webp"
-               alt="Mariage en extérieur avec cérémonie" width="800" height="533" loading="lazy" />
-          <img data-gallery-tag="Portrait" class="gallery-item img-fluid" src="./assets/images/gallery/portraits/ade-tunji-rVkhWWZFAtQ-unsplash.webp"
-               alt="Portrait artistique d'une personne" width="800" height="533" loading="lazy" />
-          <!-- Ajoute le reste des images ici -->
-        </div>
-      </div>
-    </section>
-
-    <!-- Quotes -->
-    <section class="quote">
-      <figure>
-        <blockquote>
-          <p class="quote__text">Un portrait n’est pas une ressemblance. Dès lors qu’une émotion ou qu’un fait est traduit en photo, il cesse d’être un fait pour devenir une opinion. L’inexactitude n’existe pas en photographie. Toutes les photos sont exactes. Aucune d’elles n’est la vérité.</p>
-        </blockquote>
-        <figcaption class="quote__author">- Richard Avedon</figcaption>
-      </figure>
-    </section>
-
-    <!-- Services -->
-    <section id="services">
-      <h2 class="title">Mes services</h2>
-      <div class="container">
-        <div class="service">
-          <div class="service__description">
-            <h3>Shooting photo</h3>
-            <p>Pour capturer vos moments les plus précieux et garder un souvenir impérissable. Je me déplace en Île-de-France pour réaliser vos photos</p>
-          </div>
-          <div class="service__price">
-            <h4>350€/demi journée</h4>
-            <span>Matériel, déplacement inclus</span>
-          </div>
-        </div>
-        <div class="service">
-          <div class="service__description">
-            <h3>Retouches</h3>
-            <p>Vous souhaitez retoucher vos photos pour un résultat professionnel ? Bénéficier d’un rendu optimal pour vos publications</p>
-          </div>
-          <div class="service__price">
-            <h4>50€/photo</h4>
-            <span>2 AR par photo</span>
-          </div>
-        </div>
-        <div class="service">
-          <div class="service__description">
-            <h3>Album photos</h3>
-            <p>Partagez avec vos proches et vos clients les photos des moments partagés ensemble à travers un album photo personnalisé</p>
-          </div>
-          <div class="service__price">
-            <h4>400€ album A4</h4>
-            <span>30 pages recto/verso</span>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Contact / Formulaire -->
-    <section id="contact">
-      <div class="container">
-        <h2>Une question ? Une demande de devis ?</h2>
-        <p>N’hésitez pas à m’écrire ! Je vous répondrai en moins de 24 heures</p>
-
-        <form action="" method="post" aria-label="Formulaire de contact">
-          <div class="form-group">
-            <label for="nom">Nom<span aria-hidden="true">*</span></label>
-            <input type="text" name="nom" id="nom" required placeholder="Votre nom" />
-          </div>
-
-          <div class="form-group">
-            <label for="email">Email<span aria-hidden="true">*</span></label>
-            <input type="email" name="email" id="email" required placeholder="Votre email" />
-          </div>
-
-          <div class="form-group">
-            <label for="message">Message<span aria-hidden="true">*</span></label>
-            <textarea name="message" id="message" cols="30" rows="10" required placeholder="Votre message"></textarea>
-          </div>
-
-          <button type="submit">Envoyer ma demande</button>
-        </form>
-
-        <div class="picture right">
-          <img src="./assets/images/camera.webp" alt="Image d'une caméra" loading="lazy" />
-        </div>
-      </div>
-    </section>
-
-  </main>
-
-  <!-- Footer -->
-  <footer>
-    <p>&copy; 2026 Nina Carducci. Tous droits réservés.</p>
-  </footer>
-
-</body>
-</html>
+(function ($) {
+  $.fn.mauGallery = function (options) {
+    var options = $.extend($.fn.mauGallery.defaults, options);
+    var tagsCollection = [];
+    return this.each(function () {
+      $.fn.mauGallery.methods.createRowWrapper($(this));
+      if (options.lightBox) {
+        $.fn.mauGallery.methods.createLightBox(
+          $(this),
+          options.lightboxId,
+          options.navigation,
+        );
+      }
+      $.fn.mauGallery.listeners(options);
+      $(this)
+        .children(".gallery-item")
+        .each(function (index) {
+          $.fn.mauGallery.methods.responsiveImageItem($(this));
+          $.fn.mauGallery.methods.moveItemInRowWrapper($(this));
+          $.fn.mauGallery.methods.wrapItemInColumn($(this), options.columns);
+          var theTag = $(this).data("gallery-tag");
+          if (
+            options.showTags &&
+            theTag !== undefined &&
+            tagsCollection.indexOf(theTag) === -1
+          ) {
+            tagsCollection.push(theTag);
+          }
+        });
+      if (options.showTags) {
+        $.fn.mauGallery.methods.showItemTags(
+          $(this),
+          options.tagsPosition,
+          tagsCollection,
+        );
+      }
+      $(this).fadeIn(500);
+    });
+  };
+  $.fn.mauGallery.defaults = {
+    columns: 3,
+    lightBox: !0,
+    lightboxId: null,
+    showTags: !0,
+    tagsPosition: "bottom",
+    navigation: !0,
+  };
+  $.fn.mauGallery.listeners = function (options) {
+    $(".gallery-item").on("click", function () {
+      if (options.lightBox && $(this).prop("tagName") === "IMG") {
+        $.fn.mauGallery.methods.openLightBox($(this), options.lightboxId);
+      } else {
+        return;
+      }
+    });
+    $(".gallery").on("click", ".nav-link", $.fn.mauGallery.methods.filterByTag);
+    $(".gallery").on("click", ".mg-prev", () =>
+      $.fn.mauGallery.methods.prevImage(options.lightboxId),
+    );
+    $(".gallery").on("click", ".mg-next", () =>
+      $.fn.mauGallery.methods.nextImage(options.lightboxId),
+    );
+  };
+  $.fn.mauGallery.methods = {
+    createRowWrapper(element) {
+      if (!element.children().first().hasClass("row")) {
+        element.append('<div class="gallery-items-row row"></div>');
+      }
+    },
+    wrapItemInColumn(element, columns) {
+      if (columns.constructor === Number) {
+        element.wrap(
+          `<div class='item-column mb-4 col-${Math.ceil(12 / columns)}'></div>`,
+        );
+      } else if (columns.constructor === Object) {
+        var columnClasses = "";
+        if (columns.xs) {
+          columnClasses += ` col-${Math.ceil(12 / columns.xs)}`;
+        }
+        if (columns.sm) {
+          columnClasses += ` col-sm-${Math.ceil(12 / columns.sm)}`;
+        }
+        if (columns.md) {
+          columnClasses += ` col-md-${Math.ceil(12 / columns.md)}`;
+        }
+        if (columns.lg) {
+          columnClasses += ` col-lg-${Math.ceil(12 / columns.lg)}`;
+        }
+        if (columns.xl) {
+          columnClasses += ` col-xl-${Math.ceil(12 / columns.xl)}`;
+        }
+        element.wrap(`<div class='item-column mb-4${columnClasses}'></div>`);
+      } else {
+        console.error(
+          `Columns should be defined as numbers or objects. ${typeof columns} is not supported.`,
+        );
+      }
+    },
+    moveItemInRowWrapper(element) {
+      element.appendTo(".gallery-items-row");
+    },
+    responsiveImageItem(element) {
+      if (element.prop("tagName") === "IMG") {
+        element.addClass("img-fluid");
+        if (!element.attr("width"))
+          element.attr("width", element[0].naturalWidth);
+        if (!element.attr("height"))
+          element.attr("height", element[0].naturalHeight);
+      }
+    },
+    openLightBox(element, lightboxId) {
+      $(`#${lightboxId}`)
+        .find(".lightboxImage")
+        .attr("src", element.attr("src"));
+      $(`#${lightboxId}`).modal("toggle");
+    },
+    prevImage() {
+      let activeImage = null;
+      $("img.gallery-item").each(function () {
+        if ($(this).attr("src") === $(".lightboxImage").attr("src")) {
+          activeImage = $(this);
+        }
+      });
+      let activeTag = $(".tags-bar span.active-tag").data("images-toggle");
+      let imagesCollection = [];
+      if (activeTag === "all") {
+        $(".item-column").each(function () {
+          if ($(this).children("img").length) {
+            imagesCollection.push($(this).children("img"));
+          }
+        });
+      } else {
+        $(".item-column").each(function () {
+          if ($(this).children("img").data("gallery-tag") === activeTag) {
+            imagesCollection.push($(this).children("img"));
+          }
+        });
+      }
+      let index = 0,
+        next = null;
+      $(imagesCollection).each(function (i) {
+        if ($(activeImage).attr("src") === $(this).attr("src")) {
+          index = i;
+        }
+      });
+      next =
+        imagesCollection[index] ||
+        imagesCollection[imagesCollection.length - 1];
+      $(".lightboxImage").attr("src", $(next).attr("src"));
+    },
+    nextImage() {
+      let activeImage = null;
+      $("img.gallery-item").each(function () {
+        if ($(this).attr("src") === $(".lightboxImage").attr("src")) {
+          activeImage = $(this);
+        }
+      });
+      let activeTag = $(".tags-bar span.active-tag").data("images-toggle");
+      let imagesCollection = [];
+      if (activeTag === "all") {
+        $(".item-column").each(function () {
+          if ($(this).children("img").length) {
+            imagesCollection.push($(this).children("img"));
+          }
+        });
+      } else {
+        $(".item-column").each(function () {
+          if ($(this).children("img").data("gallery-tag") === activeTag) {
+            imagesCollection.push($(this).children("img"));
+          }
+        });
+      }
+      let index = 0,
+        next = null;
+      $(imagesCollection).each(function (i) {
+        if ($(activeImage).attr("src") === $(this).attr("src")) {
+          index = i;
+        }
+      });
+      next = imagesCollection[index] || imagesCollection[0];
+      $(".lightboxImage").attr("src", $(next).attr("src"));
+    },
+    createLightBox(gallery, lightboxId, navigation) {
+      gallery.append(`<div class="modal fade" id="${
+        lightboxId ? lightboxId : "galleryLightbox"
+      }" tabindex="-1" role="dialog" aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-body">
+                            ${
+                              navigation
+                                ? '<div class="mg-prev" style="cursor:pointer;position:absolute;top:50%;left:-15px;background:white;"><</div>'
+                                : '<span style="display:none;" />'
+                            }
+                            <img class="lightboxImage img-fluid" alt="Contenu de l'image affichée dans la modale au clique"/>
+                            ${
+                              navigation
+                                ? '<div class="mg-next" style="cursor:pointer;position:absolute;top:50%;right:-15px;background:white;">></div>'
+                                : '<span style="display:none;" />'
+                            }
+                        </div>
+                    </div>
+                </div>
+            </div>`);
+    },
+    showItemTags(gallery, position, tags) {
+      var tagItems =
+        '<li class="nav-item"><span class="nav-link active active-tag"  data-images-toggle="all">Tous</span></li>';
+      $.each(tags, function (index, value) {
+        tagItems += `<li class="nav-item active">
+                <span class="nav-link"  data-images-toggle="${value}">${value}</span></li>`;
+      });
+      var tagsRow = `<ul class="my-4 tags-bar nav nav-pills">${tagItems}</ul>`;
+      if (position === "bottom") {
+        gallery.append(tagsRow);
+      } else if (position === "top") {
+        gallery.prepend(tagsRow);
+      } else {
+        console.error(`Unknown tags position: ${position}`);
+      }
+    },
+    filterByTag() {
+      if ($(this).hasClass("active-tag")) {
+        return;
+      }
+      $(".active-tag").removeClass("active active-tag");
+      $(this).addClass("active-tag");
+      var tag = $(this).data("images-toggle");
+      $(".gallery-item").each(function () {
+        $(this).parents(".item-column").hide();
+        if (tag === "all") {
+          $(this).parents(".item-column").show(300);
+        } else if ($(this).data("gallery-tag") === tag) {
+          $(this).parents(".item-column").show(300);
+        }
+      });
+    },
+  };
+})(jQuery);

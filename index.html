@@ -1,16 +1,27 @@
 <!doctype html>
 <html lang="fr">
   <head>
-    <meta charset="UTF-8" />
     <title>Nina Carducci</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Site de photographie de Nina Carducci" />
+    <meta name="description" content="site de Photographie" />
 
-    <!-- CSS -->
+    <!-- Open Graph / Facebook / LinkedIn -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Nina Carducci – Photographe à Paris">
+    <meta property="og:description" content="Photographe professionnelle spécialisée dans les portraits, mariages et événements à Paris.">
+    <meta property="og:url" content="https://www.https://github.com/Mamdalwaleed/nina_carducci.git.com">
+    <meta property="og:image" content="https://www.https://github.com/Mamdalwaleed/nina_carducci.git.com/assets/images/nina.webp">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Nina Carducci – Photographe à Paris">
+    <meta name="twitter:description" content="Photographe professionnelle spécialisée dans les portraits, mariages et événements à Paris.">
+    <meta name="twitter:image" content="https://www.https://github.com/Mamdalwaleed/nina_carducci.git.com/assets/images/nina.webp">
+
+
     <link rel="stylesheet" href="./assets/bootstrap/bootstrap.min.css" />
     <link rel="stylesheet" href="./assets/style.css" />
 
-    <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -18,8 +29,11 @@
       rel="stylesheet"
     />
 
-    <!-- Scripts -->
+    <meta charset="UTF-8" />
+
+    <!-- MODIF : ajout de defer -->
     <script src="./assets/bootstrap/bootstrap.bundle.min.js" defer></script>
+    <!-- MODIF -->
     <script
       src="https://code.jquery.com/jquery-3.4.1.min.js"
       integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
@@ -27,13 +41,15 @@
       defer
     ></script>
     <script src="./assets/maugallery.js" defer></script>
+    <!-- MODIF -->
     <script src="./assets/scripts.js" defer></script>
+    <!-- MODIF -->
   </head>
+
   <body>
-    <!-- Header -->
-    <header class="top-header">
-      <h1 class="name">Nina Carducci</h1>
-      <nav class="nav" aria-label="Navigation principale">
+    <div class="top-header">
+      <h3 class="name">Nina Carducci</h3>
+      <div class="nav">
         <ul>
           <li><a href="#about">À propos</a></li>
           <li><a href="#gallery">Galerie</a></li>
@@ -44,21 +60,20 @@
               class="social-link"
               href="https://www.instagram.com/ninacarducci.photo/?hl=fr"
               target="_blank"
-              rel="noopener noreferrer"
             >
               <img
                 src="assets/images/instagram.webp"
                 alt="Instagram"
                 loading="lazy"
               />
+              <!-- MODIF -->
             </a>
           </li>
         </ul>
-      </nav>
-    </header>
+      </div>
+    </div>
 
-    <!-- Carousel -->
-    <section id="header">
+    <div id="header">
       <div
         id="carouselExampleIndicators"
         class="carousel slide"
@@ -66,6 +81,7 @@
       >
         <div class="carousel-inner">
           <div class="carousel-item active">
+            <!-- MODIF : fetchpriority pour LCP -->
             <img
               src="./assets/images/slider/ryoji-iwata-wUZjnOv7t0g-unsplash.webp"
               class="d-block w-100"
@@ -74,7 +90,9 @@
               height="1080"
               fetchpriority="high"
             />
+            <!-- MODIF -->
           </div>
+
           <div class="carousel-item">
             <img
               src="./assets/images/slider/nicholas-green-nPz8akkUmDI-unsplash.webp"
@@ -84,6 +102,7 @@
               height="1080"
             />
           </div>
+
           <div class="carousel-item">
             <img
               src="./assets/images/slider/edward-cisneros-3_h6-1NPDGw-unsplash.webp"
@@ -95,200 +114,302 @@
           </div>
         </div>
       </div>
-    </section>
+    </div>
 
-    <main>
-      <!-- À propos -->
-      <section id="about">
-        <div class="picture left">
+    <div id="about">
+      <div class="picture left">
+        <img
+          src="./assets/images/nina.webp"
+          alt="Portrait de la photographe Nina Carducci"
+          width="300"
+          height="300"
+          loading="lazy"
+        />
+        <!-- MODIF -->
+      </div>
+
+      <div id="about-me">
+        <h3 class="about-me__title">A propos de moi</h3>
+        <h4 class="about-me__introduction">
+          Devenir photographe était pour moi une évidence...
+        </h4>
+        <p>Nous passons notre vie à chercher le bonheur...</p>
+      </div>
+    </div>
+
+    <div id="gallery" role="main">
+      <h3 class="title">Portfolio</h3>
+      <div class="container py-3">
+        <div class="gallery" style="display: none">
           <img
-            src="./assets/images/nina.webp"
-            alt="Portrait de la photographe Nina Carducci"
-            width="300"
-            height="300"
+            data-gallery-tag="Concert"
+            class="gallery-item img-fluid"
+            src="./assets/images/gallery/concerts/aaron-paul-wnX-fXzB6Cw-unsplash.webp"
+            alt="Concert avec public et scène éclairée"
+            width="800"
+            height="533"
+            loading="lazy"
+          />
+          <!-- MODIF -->
+
+          <img
+            data-gallery-tag="Entreprises"
+            class="gallery-item img-fluid"
+            src="./assets/images/gallery/entreprise/ali-morshedlou-WMD64tMfc4k-unsplash.webp"
+            alt="Réunion d'entreprise dans une salle moderne"
+            width="800"
+            height="533"
+            loading="lazy"
+          />
+          <!-- MODIF -->
+
+          <img
+            data-gallery-tag="Mariages"
+            class="gallery-item img-fluid"
+            src="./assets/images/gallery/mariage/hannah-busing-RvF2R_qMpRk-unsplash.webp"
+            alt="Mariage en extérieur avec cérémonie"
+            width="800"
+            height="533"
+            loading="lazy"
+          />
+
+          <img
+            data-gallery-tag="Portrait"
+            class="gallery-item img-fluid"
+            src="./assets/images/gallery/portraits/ade-tunji-rVkhWWZFAtQ-unsplash.webp"
+            alt="Portrait artistique d'une personne"
+            width="800"
+            height="533"
+            loading="lazy"
+          />
+
+          <img
+            data-gallery-tag="Mariages"
+            class="gallery-item img-fluid"
+            src="./assets/images/gallery/mariage/jakob-owens-SiniLJkXhMc-unsplash.webp"
+            alt="Mariage avec couple et invités"
+            width="800"
+            height="533"
+            loading="lazy"
+          />
+
+          <img
+            data-gallery-tag="Portrait"
+            class="gallery-item img-fluid"
+            src="./assets/images/gallery/portraits/nino-van-prattenburg--443cl1uR_8-unsplash.webp"
+            alt="Portrait en extérieur d'une personne souriante"
+            width="800"
+            height="533"
+            loading="lazy"
+          />
+
+          <img
+            data-gallery-tag="Concert"
+            class="gallery-item img-fluid"
+            src="./assets/images/gallery/concerts/austin-neill-hgO1wFPXl3I-unsplash.webp"
+            alt="Concert avec chanteur sur scène"
+            width="800"
+            height="533"
+            loading="lazy"
+          />
+
+          <img
+            data-gallery-tag="Entreprises"
+            class="gallery-item img-fluid"
+            src="./assets/images/gallery/entreprise/mateus-campos-felipe-Fsgzm8N0hIY-unsplash.webp"
+            alt="Equipe d'entreprise au travail dans un bureau moderne"
+            width="800"
+            height="533"
             loading="lazy"
           />
         </div>
-        <div id="about-me">
-          <h2>A propos de moi</h2>
-          <h3 class="about-me__introduction">
-            Devenir photographe était pour moi une évidence...
-          </h3>
-          <p>Nous passons notre vie à chercher le bonheur...</p>
+      </div>
+    </div>
+
+    </div>
+			<div class="quote">
+				<figure>
+					<blockquote>
+						<h1 class="quote__text">Un portrait n’est pas une ressemblance. Dès lors qu’une émotion ou qu’un
+							fait est traduit en photo, il cesse d’être un fait pour devenir une opinion. L’inexactitude
+							n’existe pas en photographie. Toutes les photos sont exactes. Aucune d’elles n’est la
+							vérité.
+						</h1>
+					</blockquote>
+					<figcaption class="quote__author">- Richard Avedon</figcaption>
+				</figure>
+			</div>
+		</div>
+		<div id="services">
+			<h3 class="title">Mes services</h3>
+			<div class="container">
+				<div class="service">
+					<div class="service__description">
+						<h3>Shooting photo</h3>
+						<p>Pour capturer vos moments les plus précieux et garder un souvenir impérissable. Je me déplace
+							en
+							Île-de-France pour réaliser vos photos</p>
+					</div>
+					<div class="service__price">
+						<h4>350€/demi journée</h4>
+						<span>Matériel, déplacement inclus </span>
+					</div>
+
+				</div>
+				<div class="service">
+					<div class="service__description">
+						<h3>Retouches</h3>
+						<p>Vous souhaitez retoucher vos photos pour un résultat professionnel ? Bénéficier d’un rendu
+							optimal pour vos publications</p>
+					</div>
+					<div class="service__price">
+						<h4>50€/photo</h4>
+						<span>2 AR par photo</span>
+					</div>
+				</div>
+				<div class="service">
+					<div class="service__description">
+						<h3>Album photos</h3>
+						<p>Partagez avec vos proches et vos clients les photos des moments partagés ensemble à travers
+							un
+							album photo personnalisé</p>
+					</div>
+					<div class="service__price">
+						<h4>400€ album A4</h4>
+						<span>30 pages recto/verso</span>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="quote">
+			<figure>
+				<blockquote>
+					<h1 class="quote__text">De manière inconsciente, je crois, je guette un regard, une expression, des
+						traits ou une nostalgie capable de résumer ou plus exactement de révéler une vie</h1>
+				</blockquote>
+				<figcaption class="quote__author">- Richard Avedon</figcaption>
+			</figure>
+		</div>
+		<div id="contact">
+			<div class="container">
+				<div class="form-container">
+  <h2>Une question ? Une demande de devis ?</h2>
+  <p>N’hésitez pas à m’écrire ! Je vous répondrai en moins de 24 heures</p>
+
+  <form action="" method="post" aria-label="Formulaire de contact">
+    <!-- Nom -->
+    <div class="form-group">
+      <label for="nom">Nom<span aria-hidden="true">*</span></label>
+      <input type="text" name="nom" id="nom" required placeholder="Votre nom" />
+    </div>
+
+    <!-- Email -->
+    <div class="form-group">
+      <label for="email">Email<span aria-hidden="true">*</span></label>
+      <input type="email" name="email" id="email" required placeholder="Votre email" />
+    </div>
+
+    <!-- Message -->
+    <div class="form-group">
+      <label for="message">Message<span aria-hidden="true">*</span></label>
+      <textarea name="message" id="message" cols="30" rows="10" required placeholder="Votre message"></textarea>
+    </div>
+
+    <!-- Bouton d'envoi -->
+    <button type="submit">Envoyer ma demande</button>
+  </form>
+</div>
+</div>
+
+		<div class="picture right">
+			<img src="./assets/images/camera.webp" alt="image de la camera" loading="lazy">
+		</div>
+          <!-- MODIF -->
         </div>
-      </section>
+      </div>
+    </div>
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@graph": [
+          {
+            "@type": "Person",
+            "name": "Nina Carducci",
+            "image": "https://www.tonsite.com/assets/images/nina.webp",
+            "url": "https://www.tonsite.com",
+            "sameAs": [
+              "https://www.instagram.com/ninacarducci.photo"
+            ],
+            "jobTitle": "Photographe",
+            "description": "Photographe professionnelle spécialisée dans les portraits, mariages et événements."
+          },
+          {
+            "@type": "LocalBusiness",
+            "name": "Nina Carducci Photographie",
+            "image": "https://www.tonsite.com/assets/images/nina.webp",
+            "description": "Studio de photographie à Paris, spécialisé dans les portraits, mariages et événements.",
+            "url": "https://www.tonsite.com",
+            "telephone": "+33-6-XX-XX-XX-XX",
+            "address": {
+              "@type": "PostalAddress",
+              "streetAddress": "10 rue de l'Exemple",
+              "postalCode": "75001",
+              "addressLocality": "Paris",
+              "addressCountry": "FR"
+            },
+            "priceRange": "€ - €€",
+            "makesOffer": [
+              {
+                "@type": "Offer",
+                "name": "Shooting photo",
+                "price": "350",
+                "priceCurrency": "EUR",
+                "description": "Demi-journée, matériel et déplacement inclus"
+              },
+              {
+                "@type": "Offer",
+                "name": "Retouches",
+                "price": "50",
+                "priceCurrency": "EUR",
+                "description": "Prix par photo, 2 AR inclus"
+              },
+              {
+                "@type": "Offer",
+                "name": "Album photos",
+                "price": "400",
+                "priceCurrency": "EUR",
+                "description": "Album A4 de 30 pages recto/verso"
+              }
+            ]
+          },
+          {
+            "@type": "ImageObject",
+            "contentUrl": "https://www.tonsite.com/assets/images/gallery/concerts/aaron-paul-wnX-fXzB6Cw-unsplash.webp",
+            "name": "Concert avec public et scène éclairée",
+            "description": "Photographie de concert avec public et lumières de scène"
+          },
+          {
+            "@type": "ImageObject",
+            "contentUrl": "https://www.tonsite.com/assets/images/gallery/mariage/hannah-busing-RvF2R_qMpRk-unsplash.webp",
+            "name": "Mariage en extérieur avec cérémonie",
+            "description": "Photographie de mariage avec couple et invités"
+          },
+          {
+            "@type": "ImageObject",
+            "contentUrl": "https://www.tonsite.com/assets/images/gallery/portraits/ade-tunji-rVkhWWZFAtQ-unsplash.webp",
+            "name": "Portrait artistique d'une personne",
+            "description": "Portrait artistique en lumière naturelle"
+          },
+          {
+            "@type": "CreativeWork",
+            "name": "Citation de Richard Avedon",
+            "text": "Un portrait n’est pas une ressemblance. Dès lors qu’une émotion ou qu’un fait est traduit en photo, il cesse d’être un fait pour devenir une opinion. L’inexactitude n’existe pas en photographie. Toutes les photos sont exactes. Aucune d’elles n’est la vérité."
+          }
+        ]
+      }
 
-      <!-- Portfolio -->
-      <section id="gallery" role="main">
-        <h2 class="title">Portfolio</h2>
-        <div class="container py-3">
-          <div class="gallery" style="display: none">
-            <img
-              data-gallery-tag="Concert"
-              class="gallery-item img-fluid"
-              src="./assets/images/gallery/concerts/aaron-paul-wnX-fXzB6Cw-unsplash.webp"
-              alt="Concert avec public et scène éclairée"
-              width="800"
-              height="533"
-              loading="lazy"
-            />
-            <img
-              data-gallery-tag="Entreprises"
-              class="gallery-item img-fluid"
-              src="./assets/images/gallery/entreprise/ali-morshedlou-WMD64tMfc4k-unsplash.webp"
-              alt="Réunion d'entreprise dans une salle moderne"
-              width="800"
-              height="533"
-              loading="lazy"
-            />
-            <img
-              data-gallery-tag="Mariages"
-              class="gallery-item img-fluid"
-              src="./assets/images/gallery/mariage/hannah-busing-RvF2R_qMpRk-unsplash.webp"
-              alt="Mariage en extérieur avec cérémonie"
-              width="800"
-              height="533"
-              loading="lazy"
-            />
-            <img
-              data-gallery-tag="Portrait"
-              class="gallery-item img-fluid"
-              src="./assets/images/gallery/portraits/ade-tunji-rVkhWWZFAtQ-unsplash.webp"
-              alt="Portrait artistique d'une personne"
-              width="800"
-              height="533"
-              loading="lazy"
-            />
-            <!-- Ajoute le reste des images ici -->
-          </div>
-        </div>
-      </section>
+  </script>
 
-      <!-- Quotes -->
-      <section class="quote">
-        <figure>
-          <blockquote>
-            <p class="quote__text">
-              Un portrait n’est pas une ressemblance. Dès lors qu’une émotion ou
-              qu’un fait est traduit en photo, il cesse d’être un fait pour
-              devenir une opinion. L’inexactitude n’existe pas en photographie.
-              Toutes les photos sont exactes. Aucune d’elles n’est la vérité.
-            </p>
-          </blockquote>
-          <figcaption class="quote__author">- Richard Avedon</figcaption>
-        </figure>
-      </section>
 
-      <!-- Services -->
-      <section id="services">
-        <h2 class="title">Mes services</h2>
-        <div class="container">
-          <div class="service">
-            <div class="service__description">
-              <h3>Shooting photo</h3>
-              <p>
-                Pour capturer vos moments les plus précieux et garder un
-                souvenir impérissable. Je me déplace en Île-de-France pour
-                réaliser vos photos
-              </p>
-            </div>
-            <div class="service__price">
-              <h4>350€/demi journée</h4>
-              <span>Matériel, déplacement inclus</span>
-            </div>
-          </div>
-          <div class="service">
-            <div class="service__description">
-              <h3>Retouches</h3>
-              <p>
-                Vous souhaitez retoucher vos photos pour un résultat
-                professionnel ? Bénéficier d’un rendu optimal pour vos
-                publications
-              </p>
-            </div>
-            <div class="service__price">
-              <h4>50€/photo</h4>
-              <span>2 AR par photo</span>
-            </div>
-          </div>
-          <div class="service">
-            <div class="service__description">
-              <h3>Album photos</h3>
-              <p>
-                Partagez avec vos proches et vos clients les photos des moments
-                partagés ensemble à travers un album photo personnalisé
-              </p>
-            </div>
-            <div class="service__price">
-              <h4>400€ album A4</h4>
-              <span>30 pages recto/verso</span>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <!-- Contact / Formulaire -->
-      <section id="contact">
-        <div class="container">
-          <h2>Une question ? Une demande de devis ?</h2>
-          <p>
-            N’hésitez pas à m’écrire ! Je vous répondrai en moins de 24 heures
-          </p>
-
-          <form action="" method="post" aria-label="Formulaire de contact">
-            <div class="form-group">
-              <label for="nom">Nom<span aria-hidden="true">*</span></label>
-              <input
-                type="text"
-                name="nom"
-                id="nom"
-                required
-                placeholder="Votre nom"
-              />
-            </div>
-
-            <div class="form-group">
-              <label for="email">Email<span aria-hidden="true">*</span></label>
-              <input
-                type="email"
-                name="email"
-                id="email"
-                required
-                placeholder="Votre email"
-              />
-            </div>
-
-            <div class="form-group">
-              <label for="message"
-                >Message<span aria-hidden="true">*</span></label
-              >
-              <textarea
-                name="message"
-                id="message"
-                cols="30"
-                rows="10"
-                required
-                placeholder="Votre message"
-              ></textarea>
-            </div>
-
-            <button type="submit">Envoyer ma demande</button>
-          </form>
-
-          <div class="picture right">
-            <img
-              src="./assets/images/camera.webp"
-              alt="Image d'une caméra"
-              loading="lazy"
-            />
-          </div>
-        </div>
-      </section>
-    </main>
-
-    <!-- Footer -->
-    <footer>
-      <p>&copy; 2026 Nina Carducci. Tous droits réservés.</p>
-    </footer>
   </body>
 </html>
